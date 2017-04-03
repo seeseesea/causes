@@ -1,0 +1,197 @@
+/*custom fonts*/
+@font-face{
+	font-family: 'body';
+	src: url('../fonts/gillsans.ttf') format('truetype'),
+	url('../fonts/gillsans.woff') format('woff'),
+	url('../fonts/gillsans.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gillsans.svg#gillsans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*@font-face{
+	font-family: 'bodybold';
+	src: url('../fonts/gillsansbold.ttf') format('truetype'),
+	url('../fonts/gillsansbold.woff') format('woff'),
+	url('../fonts/gillsansbold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gillsansbold.svg#gillsans') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'heading';
+	src: url('../fonts/helveticalight.ttf') format('truetype'),
+	url('../fonts/helveticalight.woff') format('woff'),
+	url('../fonts/helveticalight.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/helveticalight.svg#gillsans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+@font-face{
+	font-family: 'logotype';
+	src: url('../fonts/LobsterTwo-Regular.ttf') format('truetype')
+	;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*defaults*/
+*{
+	font-family: 'body';
+	font-size: 24px;
+	color: #fff;
+	margin: 0px;
+	box-sizing: border-box;
+}
+/* preset body and base elements*/
+
+body{
+	background-color: #fff;
+	background-attachment: fixed;
+}
+
+b{
+	font-family: 'bodybold';
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'heading';
+}
+
+h1{
+	font-size: 48px;
+}
+
+h2{
+	font-size: 42px;
+}
+
+h3{
+	font-size: 36px;
+}
+
+h4{
+	font-size: 32px;
+}
+
+h5{
+	font-size: 28px;
+}
+
+h6{
+	font-size: 24px;
+}
+
+/*Header Styles*/
+header{
+	background-color: #000;
+	padding: 15px;
+	border-bottom: 10px double #c0c;
+	opacity: 50%;
+}
+
+#logo{
+	font-family: 'logotype';
+	font-size: 30px;
+	text-shadow: 0px 0px 20px rgba(255,255,255, 1);
+	color: yellow;
+}
+.btn {
+	text-decoration: none;
+	margin: 10px;
+	padding: 10px 20px;
+	display: inline-block;
+	background: green;
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .75);
+	text-transform: uppercase;
+	border-radius: 50px;
+	border: 2px solid black;
+}
+
+.btn:hover {
+	background: #EFB0A1;
+	box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, .75);
+	color: yellow;
+	text-shadow: none;
+	
+}
+nav {
+	position: fixed;
+	right: 45px;
+	top: 10px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0px;
+}
+
+nav>ul>li {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+}
+
+nav a {
+	padding: 5px 20px;
+	text-decoration: none;
+	background: green;
+	border: 2px solid black;
+	display: block;
+	border-radius: 20px;
+	text-align: center;
+}
+
+nav ul li ul {
+	display: none;
+}
+
+nav ul li:hover ul {
+	display: block;
+	width: 100px;
+}
+
+nav ul li:hover ul li a {
+	display: block;
+	background: #EFB0A1;
+	border-radius: 20px;
+	border: 1px solid #3b0d11;
+	padding: 10px;
+	margin: 10px 0px;
+	font-size: 14px;
+}
+
+nav li:hover a,
+nav ul li:hover ul li:hover a {
+	background: yellow;
+	border-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

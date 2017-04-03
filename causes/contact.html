@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Contact!  Helping Families, Building Communities</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom2.css">
+	<style type="text/css">
+		.cola, .colb, .colc{border:1px #000 solid;}
+        
+		.cola{background: #aaa;}
+        
+		.colb{background: #bbb;}
+        
+		.colc{background: #ccc;}
+        
+		.carousel-inner>.item>img{
+			margin:0px auto;
+			height:200px;
+			width:auto;
+		}
+
+		p{font-size: 30px;}
+
+		@media screen and (max-width: 900px){
+
+			p {font-size: 12px;}
+		
+		}
+
+	</style>
+
+	
+</head>
+<body>
+
+	<header>
+		<h1 id="logo">JVDF Foundation</h1>
+		<nav>
+			<ul>
+				
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="facebook.com">Facebook</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<img src="img/jdvff.png">
+	<br>
+	<div id ="contact">
+	<form>
+		<label> Your Name<br>
+			<input type="text" name="fname" placeholder="You">
+		</label>
+		<br>
+		<label>Email<br>
+			<input type="email" name="email" placeholder="email@gmail.com">
+		</label>
+		<br>
+		
+		<h5>Reason for Contacting</h5>
+		<select>
+			<option name="reason" value="Donations" >Donations</option>
+			<option name="reason" value="How You Can Help" >How You Can Help</option>
+			<option name="reason" value="Suggestions" >Suggestions</option>
+			
+		</select>
+		<br>
+		<label> Message<br>
+			<textarea name="message" placeholder="Write Us!"></textarea>
+		</label>
+		<br>
+		<input type="send" name="send" value="Send Message">
+	</form>
+	</div>
+
+	<div class = "footer">
+		&copy; Joseph and Vera Douglas Family Foundation
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

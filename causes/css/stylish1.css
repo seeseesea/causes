@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'main';
+	src: url('../fonts/LobsterTwo-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+header{
+	background-color: black;
+	padding: 10px;
+	border-bottom: 10px double #139414;
+	opacity: 0.6;
+}
+
