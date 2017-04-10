@@ -1,0 +1,132 @@
+@font-face {
+	font-family: 'main';
+	src: url('../fonts/Lemonada-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'logo';
+	src: url('../fonts/LobsterTwo-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	color: #f6e300;
+}
+
+@font-face {
+	font-family: 'logo';
+	src: url('../fonts/LobsterTwo-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	color: #f6e300;
+}
+
+
+
+* {
+	font-family: 'main';
+	font-size: 15px;
+	color: #000;
+	margin: 0px;
+}
+
+body, html {
+    height: 100%;
+}
+
+div > h1{
+	justify-content: center;
+}
+
+#hero {
+	height: 100%;
+	width: 100%;
+	background: url(../img/jdvff.png) no-repeat center center;
+	background-attachment: relative;
+	background-position: center center;
+	/*padding: 70px 0px 0px 0px;*/
+	text-align: bottom;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;*/
+}
+
+
+#mission{
+	color: #000;
+	position: relative;
+	top: 800 px;
+	font-size: 17px;
+	text-align: center;
+}
+
+#board {
+	position: absolute;
+	top: 700px;
+	left: 450px;
+	font-family: 'main';
+	border-width: 2px;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #d6a117;
+    width: 400px;
+    border: 5px solid black;
+    padding: 5;
+    margin: auto;
+    justify-content: center;
+	box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	font-size:20px;
+	color: black;
+}
+
+
+
+.navbar {
+	
+	background-color: #000;
+	opacity: 0.65;
+	
+	
+}
+
+.navbar-brand{
+	font-family: 'logo';
+	font-size: 40px;
+	color: rgb(246, 227, 0);
+	display: inline-block;
+	letter-spacing: 2px;
+	
+}
+
+.navbar-default .navbar-brand {
+    color: #f6e300;
+}
+
+.nav.navbar-nav.navbar-right li a{
+	 color: #f6e300;
+}
+
+.nav.navbar-nav.navbar-right-btn{
+	 color: #f6e300;
+	 text-decoration: none;
+	 margin: 10px;
+	 padding: 10px 20px;
+	 display: inline-block;
+	 background: #01a739;
+	 box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .75);
+	 text-transform: uppercase;
+	 border-radius: 50px;
+	 border: 2px solid black;
+}
+
+.footer {
+   position: relative;
+    bottom: 0;
+    
+}
