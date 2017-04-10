@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'main';
 	src: url('../fonts/Lemonada-Regular.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -10,37 +10,41 @@
 	src: url('../fonts/LobsterTwo-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	color: #f6e300;
 }
+
+@font-face {
+	font-family: 'logo';
+	src: url('../fonts/LobsterTwo-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	color: #f6e300;
+}
+
+
 
 * {
 	font-family: 'main';
 	font-size: 15px;
 	color: #000;
 	margin: 0px;
-	
-	
 }
 
 body, html {
     height: 100%;
 }
 
-#logo {
-	font-family: 'logo';
-	font-size: 50px;
-	text-shadow: 0px 0px 0px rgba(255, 255, 255, 255);
-	display: inline-block;
-	letter-spacing: 2px;
-	color: yellow;
+div > h1{
+	justify-content: center;
 }
 
 #hero {
 	height: 100%;
 	width: 100%;
 	background: url(../img/jdvff.png) no-repeat center center;
-	background-attachment: fixed;
+	background-attachment: relative;
 	background-position: center center;
-	padding: 70px 0px 0px 0px;
+	/*padding: 70px 0px 0px 0px;*/
 	text-align: bottom;
 	display: flex;
 	justify-content: center;
@@ -58,15 +62,16 @@ body, html {
 }
 
 #board {
-	background-color: #d6a117;
-	list-style: none;
 	position: absolute;
 	top: 700px;
 	left: 450px;
+	font-family: 'main';
 	border-width: 2px;
 	border-radius: 10px;
 	text-align: center;
-	width: 400px;
+	text-decoration: none;
+	background-color: #d6a117;
+    width: 400px;
     border: 5px solid black;
     padding: 5;
     margin: auto;
@@ -74,97 +79,54 @@ body, html {
 	box-sizing: border-box;
 }
 
-#board li {
-	margin-left: -20px;
-    padding-left: -20px; 
-    list-style: none;
-    background-color: #d6a117;
-
-}
-
-#board h5 {
-	list-style: none;
-    background-color: #d6a117;
-
-}
 
 h1, h2, h3, h4, h5, h6{
 	font-size:20px;
 	color: black;
 }
 
-.btn {
-	text-decoration: none;
-	margin: 10px;
-	padding: 10px 20px;
+
+
+.navbar {
+	
+	background-color: #000;
+	opacity: 0.65;
+	
+	
+}
+
+.navbar-brand{
+	font-family: 'logo';
+	font-size: 40px;
+	color: rgb(246, 227, 0);
 	display: inline-block;
-	background: #01a739;
-	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .75);
-	text-transform: uppercase;
-	border-radius: 50px;
-	border: 2px solid black;
+	letter-spacing: 2px;
+	
 }
 
-.btn:hover {
-	background: #937503;
-	box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, .75);
-	color: #937503;
-	text-shadow: none;
-}
-nav {
-	position: fixed;
-	right: 45px;
-	top: 10px;
-
+.navbar-default .navbar-brand {
+    color: #f6e300;
 }
 
-nav ul {
-	list-style: none;
-	padding: 0px;
+.nav.navbar-nav.navbar-right li a{
+	 color: #f6e300;
 }
 
-nav>ul>li {
-	display: inline-block;
-	vertical-align: top;
-	width: 100px;
-}
-
-nav a {
-	padding: 5px 20px;
-	text-decoration: none;
-	background: yellow;
-	border: 2px solid black;
-	display: block;
-	border-radius: 20px;
-	text-align: center;
-}
-
-nav ul li ul {
-	display: none;
-}
-
-nav ul li:hover ul {
-	display: block;
-	width: 100px;
-}
-
-nav ul li:hover ul li a {
-	display: block;
-	background: #d6a117;
-	border-radius: 20px;
-	border: 1px solid black;
-	padding: 10px;
-	margin: 10px 0px;
-	font-size: 14px;
-}
-
-nav li:hover a,
-nav ul li:hover ul li:hover a {
-	background: #01a739;
-	border-color: black;
+.nav.navbar-nav.navbar-right-btn{
+	 color: #f6e300;
+	 text-decoration: none;
+	 margin: 10px;
+	 padding: 10px 20px;
+	 display: inline-block;
+	 background: #01a739;
+	 box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .75);
+	 text-transform: uppercase;
+	 border-radius: 50px;
+	 border: 2px solid black;
 }
 
 .footer {
-	position: r;
-	bottom: 0;
+   position: relative;
+    bottom: 0;
+    
 }
