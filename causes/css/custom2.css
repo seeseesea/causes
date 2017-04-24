@@ -61,19 +61,19 @@ body, html {
 
 #contact{
 	background-color: #01a739;
-	position: absolute;
+	/*position: absolute;
 	top: 550px;
-	left: 450px;
+	left: 450px;*/
 	font-family: 'main';
 	border-width: .5px;
 	border-radius: 10px;
 	text-align: center;
 	background: #01a739;
-    width: 400px;
+    /*width: 400px;*/
     border: 5px solid black;
-    padding: 5;
+    /*padding: 5;
     margin: auto;
-    justify-content: center;
+    justify-content: center;*/
 	box-sizing: border-box;
 	
  }
@@ -126,6 +126,19 @@ h1, h2, h3, h4, h5, h6{
 	 border-radius: 50px;
 	 border: 2px solid black;
 }
+
+.btn btn-info{
+	color:grey;
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .75);
+}
+
+.center{
+
+	float none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .footer {
    position: relative;
     bottom: 0;

@@ -7,20 +7,15 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/custom2.css">
 	<style type="text/css">
-		.cola, .colb, .colc{border:1px #000 solid;}
+		.cola, .colb, .colc{border:1px #fff solid;}
         
-		.cola{background: #aaa;}
+		.cola{}
         
-		.colb{background: #bbb;}
+		.colb{}
         
-		.colc{background: #ccc;}
+		.colc{}
         
-		.carousel-inner>.item>img{
-			margin:0px auto;
-			height:200px;
-			width:auto;
-		}
-
+		
 		p{font-size: 30px;}
 
 		@media screen and (max-width: 900px){
@@ -64,19 +59,21 @@
 	</header>
 	<img src="img/jdvff.png">
 	<br>
-	<div id ="contact">
+	<div class="row center">
+		<div class="col-lg-2 cola">
+		</div>
+		<div class="col-lg-8 colb center" id = "contact">
 	<form>
 		<label> Your Name<br>
-			<input type="text" name="fname" placeholder="You">
+			<input type="text" id="name" value="You">
 		</label>
 		<br>
 		<label>Email<br>
-			<input type="email" name="email" placeholder="email@gmail.com">
+			<input type="email" id="myEmail" value="john@example.com">
 		</label>
 		<br>
-		
 		<h5>Reason for Contacting</h5>
-		<select>
+		<select id="choice">
 			<option name="reason" value="Donations" >Donations</option>
 			<option name="reason" value="How You Can Help" >How You Can Help</option>
 			<option name="reason" value="Suggestions" >Suggestions</option>
@@ -84,19 +81,72 @@
 		</select>
 		<br>
 		<label> Message<br>
-			<textarea name="message" placeholder="Write Us!"></textarea>
+			<input type="text" name="myText" value="Write here!" id="myText">
 		</label>
 		<br>
-		<input type="send" name="send" value="Send Message">
+		<button onclick="myFunction()">Send Message</button>
+		<p id="demo"></p>
 	</form>
 	</div>
-
-	<div class = "footer">
-		&copy; Joseph and Vera Douglas Family Foundation
+	<div class="col-lg-2 colc">
 	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+
+
+
+	<div class="row">
+		<div class="col-lg-4 cola">
+		</div>
+		<div class="col-lg-4 colb" id = "footer">
+				&nbsp; &copy; Joseph and Vera Douglas Family Foundation
+		</div>
+		<div class="col-lg-4 colc">
+		</div>
+	</div>
+	
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	
+		
+
+	<script>
+		function myFunction() {
+		    var a = document.getElementById("name").value;
+		    document.getElementById("demo").innerHTML = a;
+		    var b = document.getElementById("myEmail").value;
+		    document.getElementById("demo").innerHTML = b;
+		    var c = document.getElementById("choice");
+		    var c_text =c.options[c.selectedIndex].innerHTML;
+		    var d = document.getElementById("myText").value;
+		    document.getElementById("demo").innerHTML = d;
+		       
+
+		    document.write("Thank You, " + a + " for contacting us!");
+		    document.write("<br>Email: " + b);
+		    document.write("<br>Your reeason for contacting us: " + c_text);
+		    document.write("<br>Your message: " + d);
+		    
+		    
+		}
+	</script>
 </body>
 
 </html>
